@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BronxBot Data</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        body {
+            background-color: #3C1518; /* Dark brown */
+            color: #e5bf56; /* Yellow */
+            font-family: Noto Sans, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .button-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+        color: #e5bf56;  /* Button text color */
+        font-size:16px;
+        font-weight: bold;
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.05); /* Semi-transparent background */
+        border: none; /* Remove border */
+        appearance: none; 
+        border-radius: 4px;
+        box-shadow: none; /* Remove any drop shadows */
+    }
+
+    button:hover {
+        background-color: rgba(255, 255, 255, 0.2); /* Slightly more opaque on hover */
+            }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 75%;
+            height: auto;
+        }
+    </style>
+
+</head>
+<body>
+    <img src="{{ url_for('static', filename='images/bronxbotlogo.png') }}" alt="BronxBot Logo">
+    <h1>Select Your Language</h1>
+    <div class="button-container">
+        <a href="{{ url_for('bronxbot') }}"><button>English</button></a>
+        <a href="{{ url_for('bronxbotsp') }}"><button>Spanish</button></a>
+    </div>
+
+    <script>
+        function chooseLanguage(language) {
+            alert(`You selected: ${language}`);
+            // Add logic here to redirect or load content based on language choice
+        }
+    </script>
+</body>
+</html>
