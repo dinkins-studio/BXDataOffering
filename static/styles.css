@@ -13,11 +13,40 @@ body {
     justify-content: center;
     height: 100vh;
 }
+header, main, footer {
+    color: #fbde96; /* Light text color for contrast */
+}
+
+h1 {
+    text-align: center;
+    color: #050505; /* Light text color for contrast */
+    font-weight: bold;
+    font-size: 40px;
+    font-family: 'Noto Sans', Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+h2 {
+    text-align: center;
+    color: #f9f9f9; /* Light text color for contrast */
+    font-weight: bold;
+    font-size: 13px;
+    font-family: 'Noto Sans', Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: #fbde96; /* tan color for labels */
+}
 
 #question {
     font-size: 2em;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 2em;
     width: 100%;
 }
 
@@ -30,10 +59,14 @@ body {
 }
 
 textarea {
-    width: 60%;
+    width: 80%; /* Set the desired width */
+    max-width: 600px; /* Optional: Set a maximum width */
+    margin: 0 auto; /* Center the text area */
+    display: block; /* Ensure the text area is a block element */
+    padding: 10px; /* Add some padding for better readability */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
     height: 100px;
     resize: vertical;
-    padding: 10px;
     font-size: 1em;
 }
 
@@ -50,6 +83,12 @@ button {
     background-color: rgba(255, 255, 255, 0.05); /* Semi-transparent background */
     border: none; /* Remove border */
     appearance: none;
+    border-radius: 8px;
+    box-shadow: none; /* Remove any drop shadows */
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly more opaque on hover */
 }
 
 img {
@@ -57,4 +96,12 @@ img {
     margin: 20px auto;
     max-width: 100%;
     height: auto;
+}
+
+/* Text container styles */
+.text-container {
+    width: 90%; /* Set the desired width for text */
+    max-width: 800px; /* Optional: Set a maximum width */
+    margin: 0 auto; /* Center the text container */
+    text-align: left; /* Align text to the left */
 }

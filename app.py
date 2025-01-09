@@ -11,12 +11,21 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 # Define the questions lists
 english_questions = [
-    "What's your favorite memory?",
-    "Upload a photo that inspires you.",
-    "Record an audio of you saying hello.",
-    "What's your favorite book?",
-    "Describe your perfect day.",
-]
+   "If someone wants to understand what matters most to your community, where should they look?",
+    "What should BronxBot know about you & your community?",
+    "How does living in the Bronx influence the way you see the world?",
+    "What should BronxBot talk about?",
+    "What does your neighborhood stand for?",
+    "What does your community add to Bronx culture?",
+    "How is culture passed down in your family?",
+    "Rep your family BX style.",
+    "How does Bronx government contribute to your success?",
+    "How does Bronx government contribute to your stress?",
+    "How does Bronx environment contribute to your success?",
+    "How does Bronx environment contribute to your stress?",
+    "How does Bronx spirit contribute to your success?",
+    "What's on your mind?", 
+    ]
 
 spanish_questions = [
     "¿Cuál es tu recuerdo favorito?",
