@@ -1,10 +1,15 @@
+
+header img {
+    margin-top: 20px; /* Add top margin to header image */
+}
+
 body {
     background-color: #3C1518; /* Dark brown */
-    color: #e5bf56; /* Yellow */
+    color: #000000; /* Yellow */
     font-family: Noto Sans, sans-serif;
     font-size: 14px;
     font-weight: bold;
-    margin: 0;
+    margin: 20px 0 0 0; /* Add margin to the top */
     padding: 20px;
     box-sizing: border-box;
     display: flex;
@@ -13,40 +18,54 @@ body {
     justify-content: center;
     height: 100vh;
 }
+
 header, main, footer {
-    color: #fbde96; /* Light text color for contrast */
+    color: #000000; /* Light text color for contrast */
 }
 
 h1 {
     text-align: center;
     color: #050505; /* Light text color for contrast */
     font-weight: bold;
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'Noto Sans', Arial, sans-serif;
     text-align: center;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
 }
 
 h2 {
     text-align: center;
-    color: #f9f9f9; /* Light text color for contrast */
+    color: #030303; /* Light text color for contrast */
     font-weight: bold;
-    font-size: 13px;
+    font-size: 12px;
     font-family: 'Noto Sans', Arial, sans-serif;
     text-align: center;
-    margin-bottom: 1.5em;
+    margin-bottom: .5em;
+    max-width: 500px;
+}
+
+h3 {
+    text-align: center;
+    color: #000000; /* Light text color for contrast */
+    font-weight: bold;
+    font-size: 12px;
+    font-family: 'Noto Sans', Arial, sans-serif;
+    text-align: center;
+    margin-bottom: .8em;
+    margin-top: .5em;
+    max-width: 500px;
 }
 
 label {
-    font-weight: bold;
+    font-weight: ;
     margin-bottom: 0.5em;
-    color: #fbde96; /* tan color for labels */
+    color: #000000; /* tan color for labels */
 }
 
 #question {
-    font-size: 2em;
+    font-size: 25px;
     text-align: center;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     width: 100%;
 }
 
@@ -54,8 +73,29 @@ label {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 10px; /* Add space between elements */
     width: 100%;
+    margin-top: 20px;
+    border: none; /* Add border */
+    padding: 20px; /* Add padding inside the border */
+    background-color: #fffefe 0.0; /* Add fill color */
+}
+
+textarea, input[type="file"], .input-container div, button {
+    margin-bottom: 15px; /* Add space below each element */
+}
+
+.upload-box {
+    border: 1px solid #000000; /* Add border */
+    padding: 10px; /* Add padding inside the border */
+    border-radius: 3px; /* Optional: Add rounded corners */
+    width: 400px; /* Optional: Set a width */
+    max-width: 600px; /* Optional: Set a maximum width */
+    height: 25px;
+    margin: 0 auto; /* Center the box */
+    background-color: #f0f0f0;
+    margin-top: 8px;
+    margin-bottom: 24px;
 }
 
 textarea {
@@ -70,32 +110,53 @@ textarea {
     font-size: 1em;
 }
 
-.button-container {
+.button-container,  .button-row, {
     display: flex;
+    justify-content: center;
     gap: 10px;
+    margin-top: 20px;
 }
 
 button {
-    color: #e5bf56;  /* Button text color */
-    font-size: 16px;
+    color: #ffffff;  /* Button text color */
+    font-size: 11px;
     font-weight: bold;
     cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.05); /* Semi-transparent background */
-    border: none; /* Remove border */
-    appearance: none;
+    background-color: #141414; /* Gray background */
+    border: 2px solid #020202; /* Add border */
+    appearance: auto;
     border-radius: 8px;
     box-shadow: none; /* Remove any drop shadows */
+    padding: 8px 25px;
+    width: 150px;
+    margin-bottom:3px; 
+    margin-top: 3px;
 }
 
 button:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Slightly more opaque on hover */
+    background-color: rgba(45, 45, 45, 0.7); /* Slightly more opaque on hover */
 }
 
 img {
     display: block;
-    margin: 20px auto;
+    margin: 30px auto;
     max-width: 100%;
     height: auto;
+}
+
+header img {
+    margin-top: 20px; /* Add top margin to header image */
+}
+
+.header-logo {
+    width: 200px; /* Set the desired width for the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 20px; /* Add top margin to the header logo */
+    margin-bottom: 0px; /* Add bottom margin to the header logo */
+}
+
+.center-button {
+    margin: 0 auto; /* Center the button */
 }
 
 /* Text container styles */
@@ -105,3 +166,10 @@ img {
     margin: 0 auto; /* Center the text container */
     text-align: left; /* Align text to the left */
 }
+
+footer {
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+}
+
