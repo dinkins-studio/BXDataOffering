@@ -57,7 +57,7 @@ h3 {
 }
 
 label {
-    font-weight: ;
+    font-weight: bold;
     margin-bottom: 0.5em;
     color: #000000; /* tan color for labels */
 }
@@ -110,7 +110,7 @@ textarea {
     font-size: 1em;
 }
 
-.button-container,  .button-row, {
+.button-container,  .button-row {
     display: flex;
     justify-content: center;
     gap: 10px;

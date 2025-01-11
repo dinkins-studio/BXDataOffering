@@ -1,0 +1,2 @@
+// filepath: /Users/sd_mbpbig/ART/_PROJECTS_WIP/BronxBot/BronxBot_web/BXDataOffering/Procfile
+web: gunicorn app:app

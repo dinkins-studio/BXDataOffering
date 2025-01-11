@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BronxBot Data</title>
+
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <style>
         body {
             background-color: #3C1518; /* Dark brown */
-            color: #e5bf56; /* Yellow */
+            color: #e5bf56;  /* text color */
             font-family: Noto Sans, sans-serif;
             font-size: 14px;
             font-weight: bold;
@@ -22,14 +22,21 @@
             margin: 0 10px;
         }
         h1 {
-            color: #0e0e0e; /* Yellow */
-            font-family: Noto Sans, sans-serif;
-            font-size:30px;
+            text-align: center;
+            color: #fbde96; /* Light text color for contrast */
             font-weight: bold;
+            font-size: 18px;
+            font-family: 'Noto Sans', Arial, sans-serif;
+            margin-bottom: 1em;
+        }
+        p {
+            color: #e5bf56;  /* Button text color */
+            text-align: center;
+            font-size: 15px;
         }
         button {
             color: #e5bf56;  /* Button text color */
-            font-size:16px;
+            font-size:14px;
             font-weight: bold;
             cursor: pointer;
             background-color: rgba(255, 255, 255, 0.05); /* Semi-transparent background */
@@ -43,19 +50,22 @@
         }
         img {
             display: block;
-            margin: 20px auto;
-            max-width: 75%;
+            margin: 5px auto;
+            margin-bottom: 30px;
+            max-width: 50%;
             height: auto;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>BronxBot Data</h1>
+    
     </header>
 
     <main>
         <img src="{{ url_for('static', filename='images/bronxbotlogo.png') }}" alt="BronxBot Logo">
+        <p>Explore the BronxBot project and contribute to the community.</p>
+        <br >
         <h1>Select Language</h1>
         <div class="button-container">
             <a href="{{ url_for('bronxbot') }}"><button>English</button></a>
@@ -64,7 +74,7 @@
     </main>
 
     <footer>
-        <p>No personal information is being collected with your contribution unless you add it in your text.
+        <p>No personal information is being collected with your contribution unless you add it in your text. Think carefully about what you share with the datashpere. 
             &copy; 2025 BronxBot Data. All Rights Reserved.</p>
     </footer>
 
