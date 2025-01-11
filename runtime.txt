@@ -1,2 +1,2 @@
 // filepath: /Users/sd_mbpbig/ART/_PROJECTS_WIP/BronxBot/BronxBot_web/BXDataOffering/runtime.txt
-python-3.11.0
+python-3.10.8
